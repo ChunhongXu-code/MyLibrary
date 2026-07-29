@@ -1,0 +1,7 @@
+:root {
+  /* 温柔的海棠粉 - 主色调 (顶部导航栏等) */
+  --md-primary-fg-color: #E6A8B8;
+
+  /* 淡淡的鹅黄 - 点缀色 (鼠标悬浮、链接等) */
+  --md-accent-fg-color: #F8D98C;
+}

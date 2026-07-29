@@ -18,3 +18,5 @@ nav:
   - 书目与摘录:
     - 月亮与六便士: books/moon.md
   - 主题索引: tags.md
+extra_css:
+      - custom.css
