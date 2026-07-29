@@ -1,0 +1,17 @@
+site_name: 我的个人图书馆
+site_url: https://你的域名.com
+
+theme:
+  name: material
+  language: zh # 设置为中文
+
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md # 告诉系统，去哪里生成主题索引
+
+nav:
+  - 首页: index.md
+  - 书目与摘录:
+    - 月亮与六便士: books/moon.md
+  - 主题索引: tags.md
