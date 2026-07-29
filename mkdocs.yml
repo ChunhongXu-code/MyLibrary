@@ -3,6 +3,9 @@ site_url: https://joycece.cn/MyLibrary/
 
 theme:
   name: material
+  palette:
+    primary: pink
+    accent: amber
   language: zh # 设置为中文
 
 plugins:
