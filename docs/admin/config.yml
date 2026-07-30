@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: ChunhongXu-code/MyLibrary # 你的 GitHub 仓库名
+  branch: master # 或者你的主分支名
+  base_url: https://netlify-cms-github-oauth-provider-lake.vercel.app # 刚刚复制的 Vercel 网址
+
+# 告诉系统，你上传的封面图片存到哪里
+media_folder: "docs/assets"
+public_folder: "../assets"
+
+# 这里就是你的“积木”：定义你要录入的内容板块
+collections:
+  - name: "books" # 程序的内部代号
+    label: "书目与摘录" # 在后台左侧菜单显示的中文名
+    folder: "docs/books" # 录入后，文件自动存到这个文件夹
+    create: true # 允许你新建书籍
+    slug: "{{slug}}" # 自动根据标题生成文件名
+    fields: # 重点来了！这是你在网页上要填的表单格子：
+      - {label: "书名", name: "title", widget: "string"}
+      - {label: "封面图片", name: "cover", widget: "image", required: false}
+      - {label: "作者", name: "author", widget: "string", required: false}
+      - {label: "阅读状态", name: "status", widget: "select", options: ["想读", "在读", "已读完"]}
+      - {label: "正文(摘录与感想)", name: "body", widget: "markdown"}
